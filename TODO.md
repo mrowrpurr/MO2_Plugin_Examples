@@ -14,7 +14,10 @@
 - [ ] Python
 - [ ] C++
 
-### Register new game (with variants) [`IPluginGame`]
+### Register new feature
+- [ ] C++
+
+### Register new game (with variants, features, and more) [`IPluginGame`]
 - [ ] Python
 - [ ] C++
 
