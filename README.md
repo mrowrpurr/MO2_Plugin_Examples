@@ -1,2 +1,3 @@
-# MO2_Native_Plugin_Example
-Example C++ plugin for MO2
+# Mod Organizer 2 plugin examples
+
+![Mod Organizer 2](resources/images/mo2.png)

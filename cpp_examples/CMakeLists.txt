@@ -1,0 +1,3 @@
+add_subdirectory(hello_world_plugin)
+
+syntax error
