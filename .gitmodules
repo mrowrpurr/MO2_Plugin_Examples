@@ -1,0 +1,3 @@
+[submodule "mob"]
+	path = mob
+	url = https://github.com/mrowrpurr/mob.git
