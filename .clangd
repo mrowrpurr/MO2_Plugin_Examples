@@ -1,2 +1,108 @@
 CompileFlags:
-    Add: ["-std:latest", "/clang:-std=c++23"]
+  Add: 
+    # MO2 Core Modules
+    - "-Ibuild/build/modorganizer_super/uibase/src"
+    - "-Ibuild/build/modorganizer_super/modorganizer/src"
+    - "-Ibuild/build/modorganizer_super/archive/src"
+    - "-Ibuild/build/modorganizer_super/bsatk/src"
+    - "-Ibuild/build/modorganizer_super/esptk/src"
+    - "-Ibuild/build/modorganizer_super/githubpp/src"
+    - "-Ibuild/build/modorganizer_super/helper/src"
+    - "-Ibuild/build/modorganizer_super/lootcli/src"
+    - "-Ibuild/build/modorganizer_super/nxmhandler/src"
+    - "-Ibuild/build/modorganizer_super/plugin_python/src"
+    - "-Ibuild/build/modorganizer_super/cmake_common/src"
+    
+    # Game Support
+    - "-Ibuild/build/modorganizer_super/game_gamebryo/src"
+    - "-Ibuild/build/modorganizer_super/game_fallout3/src"
+    - "-Ibuild/build/modorganizer_super/game_fallout4/src"
+    - "-Ibuild/build/modorganizer_super/game_fallout4vr/src"
+    - "-Ibuild/build/modorganizer_super/game_fallout76/src"
+    - "-Ibuild/build/modorganizer_super/game_falloutnv/src"
+    - "-Ibuild/build/modorganizer_super/game_morrowind/src"
+    - "-Ibuild/build/modorganizer_super/game_oblivion/src"
+    - "-Ibuild/build/modorganizer_super/game_skyrim/src"
+    - "-Ibuild/build/modorganizer_super/game_skyrimse/src"
+    - "-Ibuild/build/modorganizer_super/game_skyrimvr/src"
+    - "-Ibuild/build/modorganizer_super/game_starfield/src"
+    - "-Ibuild/build/modorganizer_super/game_ttw/src"
+    - "-Ibuild/build/modorganizer_super/game_enderal/src"
+    - "-Ibuild/build/modorganizer_super/game_enderalse/src"
+    - "-Ibuild/build/modorganizer_super/basic_games/src"
+    
+    # Installers
+    - "-Ibuild/build/modorganizer_super/installer_bain/src"
+    - "-Ibuild/build/modorganizer_super/installer_bundle/src"
+    - "-Ibuild/build/modorganizer_super/installer_fomod/src"
+    - "-Ibuild/build/modorganizer_super/installer_fomod_csharp/src"
+    - "-Ibuild/build/modorganizer_super/installer_manual/src"
+    - "-Ibuild/build/modorganizer_super/installer_omod/src"
+    - "-Ibuild/build/modorganizer_super/installer_quick/src"
+    - "-Ibuild/build/modorganizer_super/installer_wizard/src"
+    
+    # Tools
+    - "-Ibuild/build/modorganizer_super/tool_configurator/src"
+    - "-Ibuild/build/modorganizer_super/tool_inibakery/src"
+    - "-Ibuild/build/modorganizer_super/tool_inieditor/src"
+    - "-Ibuild/build/modorganizer_super/fnistool/src"
+    - "-Ibuild/build/modorganizer_super/check_fnis/src"
+    
+    # Previews
+    - "-Ibuild/build/modorganizer_super/preview_base/src"
+    - "-Ibuild/build/modorganizer_super/preview_bsa/src"
+    - "-Ibuild/build/modorganizer_super/preview_dds/src"
+    
+    # Other MO2 Components
+    - "-Ibuild/build/modorganizer_super/bsa_extractor/src"
+    - "-Ibuild/build/modorganizer_super/bsapacker/src"
+    - "-Ibuild/build/modorganizer_super/diagnose_basic/src"
+    - "-Ibuild/build/modorganizer_super/form43_checker/src"
+    - "-Ibuild/build/modorganizer_super/script_extender_plugin_checker/src"
+    
+    # Third-party Libraries
+    - "-Ibuild/build/boost_1_85_0"
+    - "-Ibuild/build/zlib-v1.3.1"
+    - "-Ibuild/build/lz4-v1.9.4"
+    - "-Ibuild/build/bzip2-1.0.8"
+    - "-Ibuild/build/spdlog-v1.14.1/include"
+    - "-Ibuild/build/libbsarch-0.0.12-release-x64/include"
+    - "-Ibuild/build/libloot-0.23.0-win64/include"
+    - "-Ibuild/build/pybind11/include"
+    - "-Ibuild/build/di/include"
+    - "-Ibuild/build/DirectXTex/include"
+    - "-Ibuild/build/googletest/include"
+    - "-Ibuild/build/openssl-3.3.0/include"
+    - "-Ibuild/build/7zip-24.05"
+    - "-Ibuild/build/usvfs/include"
+    
+    # Qt Paths
+    - "-IC:/Qt/6.7.3/msvc2022_64/include"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtWidgets"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtCore"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtGui"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtNetwork"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtWebEngineWidgets"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtWebEngineCore"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtWebChannel"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtPositioning"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtSerialPort"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtWebSockets"
+    
+    # Additional Qt includes for specific classes
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtCore/QDateTime"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtCore/QFlags"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtCore/QList"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtCore/QString"
+    - "-IC:/Qt/6.7.3/msvc2022_64/include/QtCore/QStringList"
+    
+    # C++ Standard Library
+    # - "-std:latest"
+    - "/std:c++latest"
+    - "/clang:-std=c++23"
+    - "/Zc:__cplusplus"
+    - "/EHsc"
+    - "/permissive-"
+
+  # Compiler flags
+  Compiler: cl.exe
