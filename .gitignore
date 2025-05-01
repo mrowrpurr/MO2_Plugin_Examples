@@ -1,5 +1,6 @@
-build/
-vsbuild/
+build
+vsbuild
+ninja_build
 .xmake
 compile_commands
 
