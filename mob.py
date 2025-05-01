@@ -14,7 +14,7 @@ def main(args: List[str]) -> int:
 
     # Run the exe from within its folder, forwarding all args
     result = subprocess.run(
-        [str(exe_path)] + ["-d", "mob_build_output", "--no-default-inis", "--ini", "../mob.ini"] + args,
+        [str(exe_path)] + ["-d", "../build", "--no-default-inis", "--ini", "../mob.ini"] + args,
         cwd=exe_path.parent,
     )
     return result.returncode
