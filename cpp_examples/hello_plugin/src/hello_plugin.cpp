@@ -1,11 +1,9 @@
 #include "hello_plugin.h"
 
 // Constructor and Destructor
-HelloPlugin::HelloPlugin() : m_Organizer(nullptr) {
-}
+HelloPlugin::HelloPlugin() : m_Organizer(nullptr) {}
 
-HelloPlugin::~HelloPlugin() {
-}
+HelloPlugin::~HelloPlugin() {}
 
 // IPlugin interface
 bool HelloPlugin::init(IOrganizer* organizer) {
@@ -14,21 +12,13 @@ bool HelloPlugin::init(IOrganizer* organizer) {
     return true;
 }
 
-QString HelloPlugin::name() const {
-    return "HelloPlugin";
-}
+QString HelloPlugin::name() const { return "HelloPlugin"; }
 
-QString HelloPlugin::author() const {
-    return "Your Name";
-}
+QString HelloPlugin::author() const { return "Your Name"; }
 
-QString HelloPlugin::description() const {
-    return "A simple plugin for Mod Organizer.";
-}
+QString HelloPlugin::description() const { return "A simple plugin for Mod Organizer."; }
 
-VersionInfo HelloPlugin::version() const {
-    return VersionInfo(1, 0, 0);
-}
+VersionInfo HelloPlugin::version() const { return VersionInfo(1, 0, 0); }
 
 QList<PluginSetting> HelloPlugin::settings() const {
     return {};  // No settings for this example

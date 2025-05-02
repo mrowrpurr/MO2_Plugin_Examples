@@ -17,6 +17,8 @@
 ### Register new feature
 - [ ] C++
 
+> Search for `GameFeatureCRTP<`
+
 ### Register new game (with variants, features, and more) [`IPluginGame`]
 - [ ] Python
 - [ ] C++
