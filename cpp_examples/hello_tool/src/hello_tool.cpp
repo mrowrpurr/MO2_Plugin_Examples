@@ -37,11 +37,11 @@ QList<PluginSetting> HelloTool::settings() const {
 
 // IPluginTool interface
 QString HelloTool::displayName() const {
-    return "Hello World Tool";
+    return "Tool menu name here!";
 }
 
 QString HelloTool::tooltip() const {
-    return "This is a simple Hello World tool.";
+    return "I am the tooltip text!";
 }
 
 QIcon HelloTool::icon() const {
@@ -49,5 +49,5 @@ QIcon HelloTool::icon() const {
 }
 
 void HelloTool::display() const {
-    QMessageBox::information(parentWidget(), "Hello World", "Hello, World!");
+    QMessageBox::information(parentWidget(), "MO2 Tool!", "Hello from a tool!");
 }

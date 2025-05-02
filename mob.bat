@@ -1,2 +1,2 @@
 @echo off
-python mob.py %*
+python scripts/mob.py %*
