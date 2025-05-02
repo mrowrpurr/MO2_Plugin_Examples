@@ -4,13 +4,11 @@ node_modules/
 .pnp.js
 
 # Build outputs
-build
 dist
 out
 .cache
 .xmake
 compile_commands
-vsbuild
 
 __pycache__/
 *.py[cod]

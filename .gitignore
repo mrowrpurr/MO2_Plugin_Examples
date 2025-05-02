@@ -1,4 +1,6 @@
 build
+build
+modorganizer_super
 vsbuild
 ninja_build
 .xmake
