@@ -58,6 +58,10 @@
 - [ ] Python
 - [ ] C++
 
+## Unofficial: Add Toolbar Button
+
+## Unofficial: Add Menu Item
+
 ## Game Features
 
 ...
