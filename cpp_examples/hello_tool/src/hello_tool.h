@@ -5,14 +5,14 @@
 
 using namespace MOBase;
 
-class HelloWorldPlugin : public IPluginTool {
+class HelloTool : public IPluginTool {
     Q_OBJECT
-    Q_INTERFACES(MOBase::IPlugin MOBase::IPluginTool)
-    Q_PLUGIN_METADATA(IID "org.example.HelloWorldPlugin" FILE "hello_world_plugin.json")
+    Q_INTERFACES(MOBase::IPlugin MOBase::IPluginTool) // the MOBase:: prefix is required
+    Q_PLUGIN_METADATA(IID "org.example.HelloTool" FILE "hellotool.json")
     
 public:
-    HelloWorldPlugin();
-    virtual ~HelloWorldPlugin();
+    HelloTool();
+    virtual ~HelloTool();
 
     // IPlugin interface
     bool init(MOBase::IOrganizer* moInfo) override;
