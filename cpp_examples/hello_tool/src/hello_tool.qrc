@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/hello_tool">
+        <file alias="icon">resources/icon.png</file>
+    </qresource>
+</RCC>

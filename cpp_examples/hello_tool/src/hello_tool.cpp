@@ -45,7 +45,7 @@ QString HelloTool::tooltip() const {
 }
 
 QIcon HelloTool::icon() const {
-    return QIcon(); 
+    return QIcon(":/hello_tool/icon"); // From the QRC
 }
 
 void HelloTool::display() const {

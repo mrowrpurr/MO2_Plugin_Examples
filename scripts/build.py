@@ -21,7 +21,7 @@ def main():
             subfolders.append(arg)
 
     # Run the shell command with the collected subfolders
-    command = ['mob.bat', 'build'] + subfolders
+    command = ['python', 'scripts/mob.py', "build"] + subfolders
     print(f"Running command: {' '.join(command)}")
     os.system(' '.join(command))
 
